@@ -20,6 +20,8 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         continue-on-error: true
       - name: Run snyk delta
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         run: |
           curl -Lo ./snyk-delta https://github.com/snyk-tech-services/snyk-delta/releases/download/v1.8.2/snyk-delta-linux
           chmod +x ./snyk-delta
