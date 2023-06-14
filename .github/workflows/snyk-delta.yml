@@ -14,6 +14,7 @@ jobs:
       - name: Run snyk monitor
         uses: snyk/actions/python-3.10@master
         with:
+          command: test
           args: --json --print-deps > output.json
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
