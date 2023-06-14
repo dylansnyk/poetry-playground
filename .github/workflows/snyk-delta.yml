@@ -1,0 +1,24 @@
+name: Snyk Delta
+
+on:
+  push:
+    branches:
+      - 'feat-**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@master
+      - name: Run snyk monitor
+        uses: snyk/actions/python-3.10@master
+        with:
+          args: --json --print-deps > output.json
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+      - name: Run snyk delta
+        run: |
+          curl -Lo ./snyk-delta https://github.com/snyk-tech-services/snyk-delta/releases/download/v1.8.2/snyk-delta-linux
+          chmod +x ./snyk-delta
+          cat output.json | ./snyk-delta --baselineOrg 406b5850-5861-44fb-8565-afba44c57472
