@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@master
-      - name: Run snyk monitor
+      - name: Run Snyk Monitor
         uses: snyk/actions/python-3.10@master
         with:
           command: monitor
