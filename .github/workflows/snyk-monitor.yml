@@ -1,6 +1,9 @@
 name: Snyk Monitor
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   build:
