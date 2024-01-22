@@ -1,0 +1,1930 @@
+{
+  "name": "backend",
+  "version": "0.1.0",
+  "dependencies": {
+    "fastapi": {
+      "name": "fastapi",
+      "version": "0.52.0",
+      "labels": {
+        "scope": "prod"
+      },
+      "dependencies": {
+        "pydantic": {
+          "name": "pydantic",
+          "version": "1.4",
+          "labels": {
+            "scope": "prod"
+          }
+        },
+        "starlette": {
+          "name": "starlette",
+          "version": "0.13.2",
+          "labels": {
+            "scope": "prod"
+          }
+        }
+      }
+    },
+    "gunicorn": {
+      "name": "gunicorn",
+      "version": "20.0.4",
+      "labels": {
+        "scope": "prod"
+      }
+    },
+    "uvicorn": {
+      "name": "uvicorn",
+      "version": "0.11.3",
+      "labels": {
+        "scope": "prod"
+      },
+      "dependencies": {
+        "click": {
+          "name": "click",
+          "version": "7.0",
+          "labels": {
+            "scope": "prod"
+          }
+        },
+        "h11": {
+          "name": "h11",
+          "version": "0.9.0",
+          "labels": {
+            "scope": "prod"
+          }
+        },
+        "httptools": {
+          "name": "httptools",
+          "version": "0.1.1",
+          "labels": {
+            "scope": "prod"
+          }
+        },
+        "uvloop": {
+          "name": "uvloop",
+          "version": "0.14.0",
+          "labels": {
+            "scope": "prod"
+          }
+        },
+        "websockets": {
+          "name": "websockets",
+          "version": "8.1",
+          "labels": {
+            "scope": "prod"
+          }
+        }
+      }
+    },
+    "channels": {
+      "name": "channels",
+      "version": "3.0.2",
+      "labels": {
+        "scope": "prod"
+      },
+      "dependencies": {
+        "asgiref": {
+          "name": "asgiref",
+          "version": "3.7.2",
+          "labels": {
+            "scope": "prod"
+          },
+          "dependencies": {
+            "typing-extensions": {
+              "name": "typing-extensions",
+              "version": "4.0.1",
+              "labels": {
+                "scope": "prod"
+              }
+            }
+          }
+        },
+        "daphne": {
+          "name": "daphne",
+          "version": "3.0.2",
+          "labels": {
+            "scope": "prod"
+          },
+          "dependencies": {
+            "asgiref": {
+              "name": "asgiref",
+              "version": "3.7.2",
+              "labels": {
+                "scope": "prod"
+              },
+              "dependencies": {
+                "typing-extensions": {
+                  "name": "typing-extensions",
+                  "version": "4.0.1",
+                  "labels": {
+                    "scope": "prod"
+                  }
+                }
+              }
+            },
+            "autobahn": {
+              "name": "autobahn",
+              "version": "23.1.2",
+              "labels": {
+                "scope": "prod"
+              },
+              "dependencies": {
+                "cryptography": {
+                  "name": "cryptography",
+                  "version": "41.0.1",
+                  "labels": {
+                    "scope": "prod"
+                  },
+                  "dependencies": {
+                    "cffi": {
+                      "name": "cffi",
+                      "version": "1.15.1",
+                      "labels": {
+                        "scope": "prod"
+                      },
+                      "dependencies": {
+                        "pycparser": {
+                          "name": "pycparser",
+                          "version": "2.21",
+                          "labels": {
+                            "scope": "prod"
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "hyperlink": {
+                  "name": "hyperlink",
+                  "version": "21.0.0",
+                  "labels": {
+                    "scope": "prod"
+                  },
+                  "dependencies": {
+                    "idna": {
+                      "name": "idna",
+                      "version": "2.9",
+                      "labels": {
+                        "scope": "prod"
+                      }
+                    }
+                  }
+                },
+                "txaio": {
+                  "name": "txaio",
+                  "version": "23.1.1",
+                  "labels": {
+                    "scope": "prod"
+                  }
+                }
+              }
+            },
+            "twisted": {
+              "name": "twisted",
+              "version": "22.4.0",
+              "labels": {
+                "scope": "prod"
+              },
+              "dependencies": {
+                "attrs": {
+                  "name": "attrs",
+                  "version": "19.3.0",
+                  "labels": {
+                    "scope": "prod"
+                  }
+                },
+                "automat": {
+                  "name": "automat",
+                  "version": "22.10.0",
+                  "labels": {
+                    "scope": "prod"
+                  },
+                  "dependencies": {
+                    "attrs": {
+                      "name": "attrs",
+                      "version": "19.3.0",
+                      "labels": {
+                        "scope": "prod"
+                      }
+                    },
+                    "six": {
+                      "name": "six",
+                      "version": "1.14.0",
+                      "labels": {
+                        "scope": "prod"
+                      }
+                    }
+                  }
+                },
+                "constantly": {
+                  "name": "constantly",
+                  "version": "15.1.0",
+                  "labels": {
+                    "scope": "prod"
+                  }
+                },
+                "hyperlink": {
+                  "name": "hyperlink",
+                  "version": "21.0.0",
+                  "labels": {
+                    "scope": "prod"
+                  },
+                  "dependencies": {
+                    "idna": {
+                      "name": "idna",
+                      "version": "2.9",
+                      "labels": {
+                        "scope": "prod"
+                      }
+                    }
+                  }
+                },
+                "idna": {
+                  "name": "idna",
+                  "version": "2.9",
+                  "labels": {
+                    "scope": "prod"
+                  }
+                },
+                "incremental": {
+                  "name": "incremental",
+                  "version": "22.10.0",
+                  "labels": {
+                    "scope": "prod"
+                  }
+                },
+                "pyopenssl": {
+                  "name": "pyopenssl",
+                  "version": "23.2.0",
+                  "labels": {
+                    "scope": "prod"
+                  },
+                  "dependencies": {
+                    "cryptography": {
+                      "name": "cryptography",
+                      "version": "41.0.1",
+                      "labels": {
+                        "scope": "prod"
+                      },
+                      "dependencies": {
+                        "cffi": {
+                          "name": "cffi",
+                          "version": "1.15.1",
+                          "labels": {
+                            "scope": "prod"
+                          },
+                          "dependencies": {
+                            "pycparser": {
+                              "name": "pycparser",
+                              "version": "2.21",
+                              "labels": {
+                                "scope": "prod"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "service-identity": {
+                  "name": "service-identity",
+                  "version": "21.1.0",
+                  "labels": {
+                    "scope": "prod"
+                  },
+                  "dependencies": {
+                    "attrs": {
+                      "name": "attrs",
+                      "version": "19.3.0",
+                      "labels": {
+                        "scope": "prod"
+                      }
+                    },
+                    "cryptography": {
+                      "name": "cryptography",
+                      "version": "41.0.1",
+                      "labels": {
+                        "scope": "prod"
+                      },
+                      "dependencies": {
+                        "cffi": {
+                          "name": "cffi",
+                          "version": "1.15.1",
+                          "labels": {
+                            "scope": "prod"
+                          },
+                          "dependencies": {
+                            "pycparser": {
+                              "name": "pycparser",
+                              "version": "2.21",
+                              "labels": {
+                                "scope": "prod"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "pyasn1": {
+                      "name": "pyasn1",
+                      "version": "0.5.0",
+                      "labels": {
+                        "scope": "prod"
+                      }
+                    },
+                    "pyasn1-modules": {
+                      "name": "pyasn1-modules",
+                      "version": "0.3.0",
+                      "labels": {
+                        "scope": "prod"
+                      },
+                      "dependencies": {
+                        "pyasn1": {
+                          "name": "pyasn1",
+                          "version": "0.5.0",
+                          "labels": {
+                            "scope": "prod"
+                          }
+                        }
+                      }
+                    },
+                    "six": {
+                      "name": "six",
+                      "version": "1.14.0",
+                      "labels": {
+                        "scope": "prod"
+                      }
+                    }
+                  }
+                },
+                "twisted-iocpsupport": {
+                  "name": "twisted-iocpsupport",
+                  "version": "1.0.3",
+                  "labels": {
+                    "scope": "prod"
+                  }
+                },
+                "typing-extensions": {
+                  "name": "typing-extensions",
+                  "version": "4.0.1",
+                  "labels": {
+                    "scope": "prod"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "django": {
+          "name": "django",
+          "version": "3.2.19",
+          "labels": {
+            "scope": "prod"
+          },
+          "dependencies": {
+            "asgiref": {
+              "name": "asgiref",
+              "version": "3.7.2",
+              "labels": {
+                "scope": "prod"
+              },
+              "dependencies": {
+                "typing-extensions": {
+                  "name": "typing-extensions",
+                  "version": "4.0.1",
+                  "labels": {
+                    "scope": "prod"
+                  }
+                }
+              }
+            },
+            "pytz": {
+              "name": "pytz",
+              "version": "2023.3",
+              "labels": {
+                "scope": "prod"
+              }
+            },
+            "sqlparse": {
+              "name": "sqlparse",
+              "version": "0.4.4",
+              "labels": {
+                "scope": "prod"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "type": "poetry",
+  "packageFormatVersion": "poetry:0.0.1"
+}
+{
+  "vulnerabilities": [
+    {
+      "id": "SNYK-PYTHON-CHANNELS-1055010",
+      "title": "Information Exposure",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+      "credit": [
+        "Unknown"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[3.0.0, 3.0.3)"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "3.0.3"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "python",
+      "severity": "high",
+      "cvssScore": 7.4,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "channels",
+      "references": [
+        {
+          "url": "https://channels.readthedocs.io/en/latest/releases/3.0.3.html",
+          "title": "Channels Release Note"
+        },
+        {
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=1911637",
+          "title": "RedHat Bugzilla Bug"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.4,
+          "modificationTime": "2022-01-03T18:08:15.687771Z"
+        }
+      ],
+      "description": "## Overview\n[channels](https://pypi.org/project/channels/) is a Developer-friendly asynchrony for Django.\n\nAffected versions of this package are vulnerable to Information Exposure. The legacy `channels.http.AsgiHandler` class, used for handling HTTP type requests in an ASGI environment prior to Django 3.0, did not correctly separate request scopes in Channels 3.0. In many cases this would result in a crash but, with correct timing responses could be sent to the wrong client, resulting in potential leakage of session identifiers and other sensitive data.\n## Remediation\nUpgrade `channels` to version 3.0.3 or higher.\n## References\n- [Channels Release Note](https://channels.readthedocs.io/en/latest/releases/3.0.3.html)\n- [RedHat Bugzilla Bug](https://bugzilla.redhat.com/show_bug.cgi?id=1911637)\n",
+      "epssDetails": {
+        "percentile": "0.69017",
+        "probability": "0.00378",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2020-35681"
+        ],
+        "CWE": [
+          "CWE-200"
+        ],
+        "GHSA": [
+          "GHSA-v542-8q9x-cffc"
+        ]
+      },
+      "packageName": "channels",
+      "proprietary": false,
+      "creationTime": "2020-12-31T12:49:01.015918Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2020-12-28T00:00:00Z",
+      "packageManager": "pip",
+      "publicationTime": "2020-12-31T16:00:44Z",
+      "modificationTime": "2022-01-03T18:08:15.687771Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "high",
+      "from": [
+        "backend@0.1.0",
+        "channels@3.0.2"
+      ],
+      "upgradePath": [
+        false,
+        "channels@3.0.3"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "channels",
+      "version": "3.0.2"
+    },
+    {
+      "id": "SNYK-PYTHON-CHANNELS-1078280",
+      "title": "Denial of Service (DoS)",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        "Unknown"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[3.0.0, 3.0.3)"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "3.0.3"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "python",
+      "severity": "high",
+      "cvssScore": 7.5,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "channels",
+      "references": [
+        {
+          "url": "https://channels.readthedocs.io/en/stable/releases/3.0.3.html",
+          "title": "Release Notes"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:H",
+          "cvssV3BaseScore": 7.4,
+          "modificationTime": "2022-01-03T18:08:15.687771Z"
+        }
+      ],
+      "description": "## Overview\n[channels](https://pypi.org/project/channels/) is a Developer-friendly asynchrony for Django.\n\nAffected versions of this package are vulnerable to Denial of Service (DoS). It allows remote attackers to obtain sensitive information from a different request scope. The legacy `channels.http.AsgiHandler` class, used for handling HTTP type requests in an ASGI environment prior to Django 3.0, did not correctly separate request scopes in Channels 3.0. In many cases this would result in a crash but with correct timing responses could be sent to the wrong client, resulting in potential leakage of session identifiers and other sensitive data. Note that this affects only the legacy Channels provided class, and not Django's similar ASGIHandler, available from Django 3.0.\n\n## Details\n\nDenial of Service (DoS) describes a family of attacks, all aimed at making a system inaccessible to its intended and legitimate users.\n\nUnlike other vulnerabilities, DoS attacks usually do not aim at breaching security. Rather, they are focused on making websites and services unavailable to genuine users resulting in downtime.\n\nOne popular Denial of Service vulnerability is DDoS (a Distributed Denial of Service), an attack that attempts to clog network pipes to the system by generating a large volume of traffic from many machines.\n\nWhen it comes to open source libraries, DoS vulnerabilities allow attackers to trigger such a crash or crippling of the service by using a flaw either in the application code or from the use of open source libraries.\n\nTwo common types of DoS vulnerabilities:\n\n* High CPU/Memory Consumption- An attacker sending crafted requests that could cause the system to take a disproportionate amount of time to process. For example, [commons-fileupload:commons-fileupload](SNYK-JAVA-COMMONSFILEUPLOAD-30082).\n\n* Crash - An attacker sending crafted requests that could cause the system to crash. For Example,  [npm `ws` package](https://snyk.io/vuln/npm:ws:20171108)\n\n## Remediation\nUpgrade `channels` to version 3.0.3 or higher.\n## References\n- [Release Notes](https://channels.readthedocs.io/en/stable/releases/3.0.3.html)\n",
+      "epssDetails": {
+        "percentile": "0.69017",
+        "probability": "0.00378",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2020-35681"
+        ],
+        "CWE": [
+          "CWE-400"
+        ],
+        "GHSA": [
+          "GHSA-v542-8q9x-cffc"
+        ]
+      },
+      "packageName": "channels",
+      "proprietary": false,
+      "creationTime": "2021-02-22T08:19:09.462622Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2021-02-22T08:16:40Z",
+      "packageManager": "pip",
+      "publicationTime": "2021-02-22T15:56:00Z",
+      "modificationTime": "2022-01-03T18:08:15.687771Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "high",
+      "from": [
+        "backend@0.1.0",
+        "channels@3.0.2"
+      ],
+      "upgradePath": [
+        false,
+        "channels@3.0.3"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "channels",
+      "version": "3.0.2"
+    },
+    {
+      "id": "SNYK-PYTHON-FASTAPI-1303092",
+      "title": "Cross-site Request Forgery (CSRF)",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:L/A:N/E:U/RL:O/RC:C",
+      "credit": [
+        "Unknown"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[,0.65.2)"
+        ]
+      },
+      "exploit": "Unproven",
+      "fixedIn": [
+        "0.65.2"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "python",
+      "severity": "medium",
+      "cvssScore": 4.6,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "fastapi",
+      "references": [
+        {
+          "url": "https://github.com/tiangolo/fastapi/commit/fa7e3c996edf2d5482fff8f9d890ac2390dede4d",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/tiangolo/fastapi/pull/2118",
+          "title": "GitHub PR"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+          "cvssV3BaseScore": 8.1,
+          "modificationTime": "2022-01-03T16:41:46.628761Z"
+        }
+      ],
+      "description": "## Overview\n[fastapi](https://pypi.org/project/fastapi/) is a web framework for building APIs with Python 3.6+ based on standard Python type hints.\n\nAffected versions of this package are vulnerable to Cross-site Request Forgery (CSRF). `FastAPI` would try to read the request payload as JSON even if the content-type header sent was not set to application/json or a compatible JSON media type (e.g. application/geo+json). A request with a content type of text/plain containing JSON data would be accepted and the JSON data would be extracted. Requests with content type text/plain are exempt from CORS preflights, for being considered Simple requests. The browser will execute them right away including cookies, and the text content could be a JSON string that would be parsed and accepted by the `FastAPI` application.\n## Remediation\nUpgrade `fastapi` to version 0.65.2 or higher.\n## References\n- [GitHub Commit](https://github.com/tiangolo/fastapi/commit/fa7e3c996edf2d5482fff8f9d890ac2390dede4d)\n- [GitHub PR](https://github.com/tiangolo/fastapi/pull/2118)\n",
+      "epssDetails": {
+        "percentile": "0.35192",
+        "probability": "0.00086",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2021-32677"
+        ],
+        "CWE": [
+          "CWE-352"
+        ],
+        "GHSA": [
+          "GHSA-8h2j-cgx8-6xv7"
+        ]
+      },
+      "packageName": "fastapi",
+      "proprietary": false,
+      "creationTime": "2021-06-10T12:13:42.542508Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2021-06-10T12:11:49Z",
+      "packageManager": "pip",
+      "publicationTime": "2021-06-10T15:17:45.902839Z",
+      "modificationTime": "2022-01-03T16:41:46.628761Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "backend@0.1.0",
+        "fastapi@0.52.0"
+      ],
+      "upgradePath": [
+        false,
+        "fastapi@0.65.2"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "fastapi",
+      "version": "0.52.0"
+    },
+    {
+      "id": "SNYK-PYTHON-PYDANTIC-1292338",
+      "title": "Denial of Service (DoS)",
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+      "credit": [
+        "Unknown"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[,1.6.2)",
+          "[1.7,1.7.4)",
+          "[1.8,1.8.2)"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "1.6.2",
+        "1.7.4",
+        "1.8.2"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "python",
+      "severity": "low",
+      "cvssScore": 3.3,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "pydantic",
+      "references": [
+        {
+          "url": "https://github.com/samuelcolvin/pydantic/security/advisories/GHSA-5jqp-qgf6-3pvh",
+          "title": "GitHub Advisory"
+        },
+        {
+          "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-29510",
+          "title": "NVD"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2022-01-03T16:38:48.365746Z"
+        }
+      ],
+      "description": "## Overview\n[pydantic](https://pypi.org/project/pydantic) is a Data validation and settings management using python 3.6 type hinting\n\nAffected versions of this package are vulnerable to Denial of Service (DoS). Use of \"infinity\" as an input to datetime and date fields causes infinite loop in pydantic. Passing either 'infinity', 'inf' or float('inf') (or their negatives) to datetime or date fields causes validation to run forever with 100% CPU usage (on one CPU).\n\n## Details\n\nDenial of Service (DoS) describes a family of attacks, all aimed at making a system inaccessible to its intended and legitimate users.\n\nUnlike other vulnerabilities, DoS attacks usually do not aim at breaching security. Rather, they are focused on making websites and services unavailable to genuine users resulting in downtime.\n\nOne popular Denial of Service vulnerability is DDoS (a Distributed Denial of Service), an attack that attempts to clog network pipes to the system by generating a large volume of traffic from many machines.\n\nWhen it comes to open source libraries, DoS vulnerabilities allow attackers to trigger such a crash or crippling of the service by using a flaw either in the application code or from the use of open source libraries.\n\nTwo common types of DoS vulnerabilities:\n\n* High CPU/Memory Consumption- An attacker sending crafted requests that could cause the system to take a disproportionate amount of time to process. For example, [commons-fileupload:commons-fileupload](SNYK-JAVA-COMMONSFILEUPLOAD-30082).\n\n* Crash - An attacker sending crafted requests that could cause the system to crash. For Example,  [npm `ws` package](https://snyk.io/vuln/npm:ws:20171108)\n\n## Remediation\nUpgrade `pydantic` to version 1.6.2, 1.7.4, 1.8.2 or higher.\n## References\n- [GitHub Advisory](https://github.com/samuelcolvin/pydantic/security/advisories/GHSA-5jqp-qgf6-3pvh)\n- [NVD](https://nvd.nist.gov/vuln/detail/CVE-2021-29510)\n",
+      "epssDetails": {
+        "percentile": "0.46624",
+        "probability": "0.00129",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2021-29510"
+        ],
+        "CWE": [
+          "CWE-835"
+        ],
+        "GHSA": [
+          "GHSA-5jqp-qgf6-3pvh"
+        ]
+      },
+      "packageName": "pydantic",
+      "proprietary": false,
+      "creationTime": "2021-05-14T13:49:57.169520Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2021-05-13T20:23:17Z",
+      "packageManager": "pip",
+      "publicationTime": "2021-05-14T15:39:36.568909Z",
+      "modificationTime": "2022-01-03T16:38:48.365746Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "low",
+      "from": [
+        "backend@0.1.0",
+        "fastapi@0.52.0",
+        "pydantic@1.4"
+      ],
+      "upgradePath": [
+        false,
+        "fastapi@0.52.0"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "pydantic",
+      "version": "1.4"
+    },
+    {
+      "id": "SNYK-PYTHON-STARLETTE-3319937",
+      "title": "Denial of Service (DoS)",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "credit": [
+        "@das7pad"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[,0.25.0)"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "0.25.0"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "python",
+      "severity": "medium",
+      "cvssScore": 5.9,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "starlette",
+      "references": [
+        {
+          "url": "https://github.com/encode/starlette/commit/8c74c2c8dba7030154f8af18e016136bea1938fa",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/encode/starlette/pull/2036",
+          "title": "GitHub PR"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2023-04-28T13:10:07.017020Z"
+        }
+      ],
+      "description": "## Overview\n[starlette](https://www.pypi.org/project/starlette) is a The little ASGI library that shines.\n\nAffected versions of this package are vulnerable to Denial of Service (DoS) via the `MultipartParser` class, which accepts an unlimited number of fields and files when parsing `multipart/form-data`.\r\nExploiting this vulnerability is possible by sending too many small form fields with no content or too many empty files, which results in high CPU usage and high memory usage.\r\n\r\n**Note:** \r\n\r\nAn affected application has to have all the following:\r\n\r\n1) `python-multipart` installed.\r\n\r\n2) calls `request.form()`.\r\n\r\n\r\n## Workarounds\r\n\r\nApplications that don't install `python-multipart` or that don't use form fields are safe.\r\n\r\nIn older versions, it's also possible to instead of calling `request.form()` call `request.stream()` and parse the form data in internal code.\n\n## Details\n\nDenial of Service (DoS) describes a family of attacks, all aimed at making a system inaccessible to its intended and legitimate users.\n\nUnlike other vulnerabilities, DoS attacks usually do not aim at breaching security. Rather, they are focused on making websites and services unavailable to genuine users resulting in downtime.\n\nOne popular Denial of Service vulnerability is DDoS (a Distributed Denial of Service), an attack that attempts to clog network pipes to the system by generating a large volume of traffic from many machines.\n\nWhen it comes to open source libraries, DoS vulnerabilities allow attackers to trigger such a crash or crippling of the service by using a flaw either in the application code or from the use of open source libraries.\n\nTwo common types of DoS vulnerabilities:\n\n* High CPU/Memory Consumption- An attacker sending crafted requests that could cause the system to take a disproportionate amount of time to process. For example, [commons-fileupload:commons-fileupload](SNYK-JAVA-COMMONSFILEUPLOAD-30082).\n\n* Crash - An attacker sending crafted requests that could cause the system to crash. For Example,  [npm `ws` package](https://snyk.io/vuln/npm:ws:20171108)\n\n## Remediation\nUpgrade `starlette` to version 0.25.0 or higher.\n## References\n- [GitHub Commit](https://github.com/encode/starlette/commit/8c74c2c8dba7030154f8af18e016136bea1938fa)\n- [GitHub PR](https://github.com/encode/starlette/pull/2036)\n",
+      "epssDetails": {
+        "percentile": "0.42075",
+        "probability": "0.00106",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2023-30798"
+        ],
+        "CWE": [
+          "CWE-400"
+        ],
+        "GHSA": [
+          "GHSA-74m5-2c7w-9w3x"
+        ]
+      },
+      "packageName": "starlette",
+      "proprietary": false,
+      "creationTime": "2023-02-15T09:14:25.359077Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2023-02-14T21:31:28Z",
+      "packageManager": "pip",
+      "publicationTime": "2023-02-15T09:25:51.518082Z",
+      "modificationTime": "2023-04-28T13:10:07.017020Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "backend@0.1.0",
+        "fastapi@0.52.0",
+        "starlette@0.13.2"
+      ],
+      "upgradePath": [
+        false,
+        "fastapi@0.52.0"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "starlette",
+      "version": "0.13.2"
+    },
+    {
+      "id": "SNYK-PYTHON-STARLETTE-573266",
+      "title": "Directory Traversal",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+      "credit": [
+        "erinpentecost"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[0,0.13.5)"
+        ]
+      },
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "0.13.5"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "python",
+      "severity": "high",
+      "cvssScore": 8.6,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "starlette",
+      "references": [
+        {
+          "url": "https://github.com/encode/starlette/issues/981",
+          "title": "GitHub Issue"
+        },
+        {
+          "url": "https://github.com/encode/starlette/pull/985/files",
+          "title": "GitHub PR"
+        }
+      ],
+      "cvssDetails": [],
+      "description": "## Overview\n[starlette](https://www.pypi.org/project/starlette) is a The little ASGI library that shines.\n\nAffected versions of this package are vulnerable to Directory Traversal. Any file on the host machine can be read by passing an absolute path, formatted in a URL such as `http://localhost:5000/staticmount/c%3a%5cwindows%5cwin.ini`.\n\n## Details\n\nA Directory Traversal attack (also known as path traversal) aims to access files and directories that are stored outside the intended folder. By manipulating files with \"dot-dot-slash (../)\" sequences and its variations, or by using absolute file paths, it may be possible to access arbitrary files and directories stored on file system, including application source code, configuration, and other critical system files.\n\nDirectory Traversal vulnerabilities can be generally divided into two types:\n\n- **Information Disclosure**: Allows the attacker to gain information about the folder structure or read the contents of sensitive files on the system.\n\n`st` is a module for serving static files on web pages, and contains a [vulnerability of this type](https://snyk.io/vuln/npm:st:20140206). In our example, we will serve files from the `public` route.\n\nIf an attacker requests the following URL from our server, it will in turn leak the sensitive private key of the root user.\n\n```\ncurl http://localhost:8080/public/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/root/.ssh/id_rsa\n```\n**Note** `%2e` is the URL encoded version of `.` (dot).\n\n- **Writing arbitrary files**: Allows the attacker to create or replace existing files. This type of vulnerability is also known as `Zip-Slip`. \n\nOne way to achieve this is by using a malicious `zip` archive that holds path traversal filenames. When each filename in the zip archive gets concatenated to the target extraction folder, without validation, the final path ends up outside of the target folder. If an executable or a configuration file is overwritten with a file containing malicious code, the problem can turn into an arbitrary code execution issue quite easily.\n\nThe following is an example of a `zip` archive with one benign file and one malicious file. Extracting the malicious file will result in traversing out of the target folder, ending up in `/root/.ssh/` overwriting the `authorized_keys` file:\n\n```\n2018-04-15 22:04:29 .....           19           19  good.txt\n2018-04-15 22:04:42 .....           20           20  ../../../../../../root/.ssh/authorized_keys\n```\n\n## Remediation\nUpgrade `starlette` to version 0.13.5 or higher.\n## References\n- [GitHub Issue](https://github.com/encode/starlette/issues/981)\n- [GitHub PR](https://github.com/encode/starlette/pull/985/files)\n",
+      "epssDetails": null,
+      "identifiers": {
+        "CVE": [],
+        "CWE": [
+          "CWE-22"
+        ]
+      },
+      "packageName": "starlette",
+      "proprietary": false,
+      "creationTime": "2020-06-25T13:53:16.782466Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2020-06-25T13:43:31Z",
+      "packageManager": "pip",
+      "publicationTime": "2020-07-19T16:14:28.944469Z",
+      "modificationTime": "2020-07-19T16:14:28.946431Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "high",
+      "from": [
+        "backend@0.1.0",
+        "fastapi@0.52.0",
+        "starlette@0.13.2"
+      ],
+      "upgradePath": [
+        false,
+        "fastapi@0.52.0"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "starlette",
+      "version": "0.13.2"
+    },
+    {
+      "id": "SNYK-PYTHON-TWISTED-3084923",
+      "title": "HTTP Header Injection",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N/E:P",
+      "credit": [
+        "Unknown"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[,22.10.0rc1)"
+        ]
+      },
+      "exploit": "Proof of Concept",
+      "fixedIn": [
+        "22.10.0rc1"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "python",
+      "severity": "medium",
+      "cvssScore": 5.4,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "twisted",
+      "references": [
+        {
+          "url": "https://github.com/twisted/twisted/commit/f2f5e81c03f14e253e85fe457e646130780db40b",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/twisted/twisted/commit/f49041bb67792506d85aeda9cf6157e92f8048f4",
+          "title": "GitHub Commit"
+        },
+        {
+          "url": "https://github.com/twisted/twisted/releases/tag/twisted-22.10.0rc1",
+          "title": "GitHub Release"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+          "cvssV3BaseScore": 5.4,
+          "modificationTime": "2022-11-23T01:10:35.406408Z"
+        },
+        {
+          "assigner": "Red Hat",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+          "cvssV3BaseScore": 5.4,
+          "modificationTime": "2022-11-17T16:05:09.580392Z"
+        },
+        {
+          "assigner": "SUSE",
+          "severity": "low",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+          "cvssV3BaseScore": 3.7,
+          "modificationTime": "2022-11-18T11:01:34.480192Z"
+        }
+      ],
+      "description": "## Overview\n[Twisted](https://pypi.org/project/Twisted/) is an event-based network programming and multi-protocol integration framework.\n\nAffected versions of this package are vulnerable to HTTP Header Injection via the `NameVirtualHost` function. When the host header does not match a configured host, `twisted.web.vhost.NameVirtualHost` will return a `NoResource` resource which renders the Host header unescaped into the 404 response allowing HTML and script injection.\r\n\r\n## PoC:\r\n\r\n```python\r\nfrom twisted.web.server import Site\r\nfrom twisted.web.vhost import NameVirtualHost\r\nfrom twisted.internet import reactor\r\n\r\nresource = NameVirtualHost()\r\nsite = Site(resource)\r\nreactor.listenTCP(8080, site)\r\nreactor.run()\r\n```\r\n**Output:**\r\n\r\n```\r\n❯ curl -H\"Host:<h1>HELLO THERE</h1>\" http://localhost:8080/\r\n\r\n<html>\r\n  <head><title>404 - No Such Resource</title></head>\r\n  <body>\r\n    <h1>No Such Resource</h1>\r\n    <p>host b'<h1>hello there</h1>' not in vhost map</p>\r\n  </body>\r\n</html>\r\n```\n## Remediation\nUpgrade `Twisted` to version 22.10.0rc1 or higher.\n## References\n- [GitHub Commit](https://github.com/twisted/twisted/commit/f2f5e81c03f14e253e85fe457e646130780db40b)\n- [GitHub Commit](https://github.com/twisted/twisted/commit/f49041bb67792506d85aeda9cf6157e92f8048f4)\n- [GitHub Release](https://github.com/twisted/twisted/releases/tag/twisted-22.10.0rc1)\n",
+      "epssDetails": {
+        "percentile": "0.28109",
+        "probability": "0.00068",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2022-39348"
+        ],
+        "CWE": [
+          "CWE-644"
+        ],
+        "GHSA": [
+          "GHSA-vg46-2rrj-3647"
+        ]
+      },
+      "packageName": "twisted",
+      "proprietary": false,
+      "creationTime": "2022-10-27T10:36:49.332333Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2022-10-26T22:08:39Z",
+      "packageManager": "pip",
+      "publicationTime": "2022-10-27T11:22:59.932379Z",
+      "modificationTime": "2022-11-23T01:10:35.406408Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "backend@0.1.0",
+        "channels@3.0.2",
+        "daphne@3.0.2",
+        "twisted@22.4.0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "twisted",
+      "version": "22.4.0"
+    },
+    {
+      "id": "SNYK-PYTHON-UVICORN-570471",
+      "title": "HTTP Response Splitting",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N/E:P/RL:U/RC:C",
+      "credit": [
+        "Everardo Padilla Saca"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[,0.11.7)"
+        ]
+      },
+      "exploit": "Proof of Concept",
+      "fixedIn": [
+        "0.11.7"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "python",
+      "severity": "medium",
+      "cvssScore": 5.3,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "uvicorn",
+      "references": [
+        {
+          "url": "https://github.com/encode/uvicorn",
+          "title": "Uvicorn Repository"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+          "cvssV3BaseScore": 5.3,
+          "modificationTime": "2023-02-14T14:59:53.265475Z"
+        }
+      ],
+      "description": "## Overview\n[uvicorn](https://github.com/encode/uvicorn) is a lightning-fast ASGI server.\n\nAffected versions of this package are vulnerable to HTTP Response Splitting. Uvicorn's implementation of the HTTP protocol for the httptools parser is vulnerable to HTTP response splitting. CRLF sequences are not escaped in the value of HTTP headers. Attackers can exploit this to add arbitrary headers to HTTP responses, or even return an arbitrary response body, whenever crafted input is used to construct HTTP headers.\r\n\r\n### PoC\r\n```\r\nasync def app(scope, receive, send):\r\n    assert scope['type'] == 'http'\r\n    await send({\r\n        'type': 'http.response.start',\r\n        'status': 200,\r\n        'headers': [\r\n            [b'Content-Type', b'text/plain'],\r\n            [b'Referer', scope['path'].encode()],\r\n        ]\r\n    })  \r\n    await send({\r\n        'type': 'http.response.body',\r\n        'body': b'Hello, world!',\r\n    })\r\n\r\nuvicorn poc-3:app --port 9999 --http httptools\r\n\r\n\r\nTo exploit this vulnerability, make a GET request with a crafted URL path like so:\r\n\r\n\r\ncurl -v 'http://localhost:9999/foo%0d%0abar:%20baz'\r\n\r\nUvicorn will return an additional HTTP header \"bar\" with the value \"baz\":\r\n\r\n* Trying 127.0.0.1...\r\n* Connected to localhost (127.0.0.1) port 9999 (#0)\r\n> GET /foo%0d%0abar:%20baz HTTP/1.1\r\n> Host: localhost:9999\r\n> User-Agent: curl/7.58.0\r\n> Accept: */*\r\n>\r\n\r\n< HTTP/1.1 200 OK\r\n< date: Sun, 26 Apr 2020 22:38:18 GMT\r\n< server: uvicorn\r\n< content-type: text/plain\r\n< referer: /foo\r\n< bar: baz\r\n< transfer-encoding: chunked\r\n<\r\n```\n## Remediation\nUpgrade `uvicorn` to version 0.11.7 or higher.\n## References\n- [Uvicorn Repository](https://github.com/encode/uvicorn)\n",
+      "epssDetails": {
+        "percentile": "0.37503",
+        "probability": "0.00091",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2020-7695"
+        ],
+        "CWE": [
+          "CWE-113"
+        ],
+        "GHSA": [
+          "GHSA-f97h-2pfx-f59f"
+        ]
+      },
+      "packageName": "uvicorn",
+      "proprietary": true,
+      "creationTime": "2020-05-27T16:58:12.237089Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2020-07-10T09:47:21Z",
+      "packageManager": "pip",
+      "publicationTime": "2020-07-20T14:21:35Z",
+      "modificationTime": "2023-02-14T14:59:53.265475Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "backend@0.1.0",
+        "uvicorn@0.11.3"
+      ],
+      "upgradePath": [
+        false,
+        "uvicorn@0.11.7"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "uvicorn",
+      "version": "0.11.3"
+    },
+    {
+      "id": "SNYK-PYTHON-UVICORN-575560",
+      "title": "Log Injection",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N/E:P/RL:U/RC:C",
+      "credit": [
+        "Everardo Padilla Saca"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[,0.11.7)"
+        ]
+      },
+      "exploit": "Proof of Concept",
+      "fixedIn": [
+        "0.11.7"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "python",
+      "severity": "low",
+      "cvssScore": 3.7,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "uvicorn",
+      "references": [
+        {
+          "url": "https://github.com/encode/uvicorn",
+          "title": "Uvicorn Repository"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "high",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+          "cvssV3BaseScore": 7.5,
+          "modificationTime": "2022-01-03T18:11:01.100683Z"
+        }
+      ],
+      "description": "## Overview\n[uvicorn](https://github.com/encode/uvicorn) is a lightning-fast ASGI server.\n\nAffected versions of this package are vulnerable to Log Injection. The request logger provided by the package is vulnerable to ASNI escape sequence injection. Whenever any HTTP request is received, the default behaviour of` uvicorn` is to log its details to either the console or a log file. When attackers request crafted URLs with percent-encoded escape sequences, the logging component will log the URL after it's been processed with `urllib.parse.unquote`, therefore converting any percent-encoded characters into their single-character equivalent, which can have special meaning in terminal emulators.\r\n\r\nBy requesting URLs with crafted paths, attackers can:\r\n\r\n* Pollute uvicorn's access logs, therefore jeopardising the integrity of such files.\r\n* Use ANSI sequence codes to attempt to interact with the terminal emulator that's displaying the logs (either in real time or from a file).\r\n\r\n### PoC\r\n```\r\nasync def app(scope, receive, send):\r\n    print(scope)\r\n    assert scope['type'] == 'http'\r\n    await send({\r\n        'type': 'http.response.start',\r\n        'status': 200,\r\n        'headers': [\r\n            [b'Content-Type', b'text/plain']\r\n        ]\r\n    })  \r\n    await send({\r\n        'type': 'http.response.body',\r\n        'body': b'Hello, world!',\r\n    })\r\n`\r\n\r\ncurl -v 'http://localhost:9999/logfile-injection%20HTTP%2f1.1%22%20200%20OK%0d%0aINFO:%20%20%20%20%208.8.8.8:1337%20-%20%22POST%20/admin/fake-action'\r\n\r\n$ cat log.txt\r\n\r\nINFO:     127.0.0.1:49242 - \"GET /logfile-injection HTTP/1.1\" 200 OK\r\nINFO:     8.8.8.8:1337 - \"POST /admin/fake-action HTTP/1.1\" 200 OK\r\n\r\nThe previous GET request added a fake entry to the log file, stating that the host at 8.8.8.8 made a POST request to /admin/fake-action.\r\n\r\n```\n## Remediation\nUpgrade `uvicorn` to version 0.11.7 or higher.\n## References\n- [Uvicorn Repository](https://github.com/encode/uvicorn)\n",
+      "epssDetails": {
+        "percentile": "0.48480",
+        "probability": "0.00140",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2020-7694"
+        ],
+        "CWE": [
+          "CWE-117"
+        ],
+        "GHSA": [
+          "GHSA-33c7-2mpw-hg34"
+        ]
+      },
+      "packageName": "uvicorn",
+      "proprietary": true,
+      "creationTime": "2020-07-10T09:30:02.579508Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2020-07-10T09:29:46Z",
+      "packageManager": "pip",
+      "publicationTime": "2020-07-20T14:21:35Z",
+      "modificationTime": "2022-01-03T18:11:01.100683Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "low",
+      "from": [
+        "backend@0.1.0",
+        "uvicorn@0.11.3"
+      ],
+      "upgradePath": [
+        false,
+        "uvicorn@0.11.7"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "uvicorn",
+      "version": "0.11.3"
+    },
+    {
+      "id": "SNYK-PYTHON-WEBSOCKETS-1297182",
+      "title": "Timing Attack",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L/E:U/RL:O/RC:R",
+      "credit": [
+        "Aymeric Augustin"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[8.0, 9.1)"
+        ]
+      },
+      "exploit": "Unproven",
+      "fixedIn": [
+        "9.1"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "python",
+      "severity": "high",
+      "cvssScore": 8.6,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "websockets",
+      "references": [
+        {
+          "url": "https://github.com/aaugustin/websockets/commit/547a26b685d08cac0aa64e5e65f7867ac0ea9bc0",
+          "title": "GitHub Commit"
+        }
+      ],
+      "cvssDetails": [
+        {
+          "assigner": "NVD",
+          "severity": "medium",
+          "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+          "cvssV3BaseScore": 5.9,
+          "modificationTime": "2022-05-13T01:10:55.695561Z"
+        }
+      ],
+      "description": "## Overview\n\nAffected versions of this package are vulnerable to Timing Attack when HTTP Basic Auth is enabled with `basic_auth_protocol_factory`. This vulnerability can possibly be exploitable by guessing the password via a timing attack.\n## Remediation\nUpgrade `websockets` to version 9.1 or higher.\n## References\n- [GitHub Commit](https://github.com/aaugustin/websockets/commit/547a26b685d08cac0aa64e5e65f7867ac0ea9bc0)\n",
+      "epssDetails": {
+        "percentile": "0.38137",
+        "probability": "0.00092",
+        "modelVersion": "v2023.03.01"
+      },
+      "identifiers": {
+        "CVE": [
+          "CVE-2021-33880"
+        ],
+        "CWE": [
+          "CWE-208"
+        ],
+        "GHSA": [
+          "GHSA-8ch4-58qp-g3mp"
+        ]
+      },
+      "packageName": "websockets",
+      "proprietary": false,
+      "creationTime": "2021-05-28T13:24:27.089954Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2021-05-28T13:22:50Z",
+      "packageManager": "pip",
+      "publicationTime": "2021-05-28T13:47:28Z",
+      "modificationTime": "2022-05-13T01:10:55.695561Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "high",
+      "from": [
+        "backend@0.1.0",
+        "uvicorn@0.11.3",
+        "websockets@8.1"
+      ],
+      "upgradePath": [
+        false,
+        "uvicorn@0.18.3"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "websockets",
+      "version": "8.1"
+    },
+    {
+      "id": "SNYK-PYTHON-WEBSOCKETS-1582792",
+      "title": "Denial of Service (DoS)",
+      "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H/E:U/RL:O/RC:R",
+      "credit": [
+        "Aymeric Augustin"
+      ],
+      "semver": {
+        "vulnerable": [
+          "[,10.0)"
+        ]
+      },
+      "exploit": "Unproven",
+      "fixedIn": [
+        "10.0"
+      ],
+      "patches": [],
+      "insights": {
+        "triageAdvice": null
+      },
+      "language": "python",
+      "severity": "medium",
+      "cvssScore": 5.9,
+      "functions": [],
+      "malicious": false,
+      "isDisputed": false,
+      "moduleName": "websockets",
+      "references": [
+        {
+          "url": "https://github.com/aaugustin/websockets/commit/0a935b8ec16f4430ffe638cdbfbe45f6f9d7f684",
+          "title": "GitHub Commit"
+        }
+      ],
+      "cvssDetails": [],
+      "description": "## Overview\n\nAffected versions of this package are vulnerable to Denial of Service (DoS). Header sizes are not properly validated which might result in some denial of service scenarios. This vulnerability is likely not exploitable.\n\n## Details\n\nDenial of Service (DoS) describes a family of attacks, all aimed at making a system inaccessible to its intended and legitimate users.\n\nUnlike other vulnerabilities, DoS attacks usually do not aim at breaching security. Rather, they are focused on making websites and services unavailable to genuine users resulting in downtime.\n\nOne popular Denial of Service vulnerability is DDoS (a Distributed Denial of Service), an attack that attempts to clog network pipes to the system by generating a large volume of traffic from many machines.\n\nWhen it comes to open source libraries, DoS vulnerabilities allow attackers to trigger such a crash or crippling of the service by using a flaw either in the application code or from the use of open source libraries.\n\nTwo common types of DoS vulnerabilities:\n\n* High CPU/Memory Consumption- An attacker sending crafted requests that could cause the system to take a disproportionate amount of time to process. For example, [commons-fileupload:commons-fileupload](SNYK-JAVA-COMMONSFILEUPLOAD-30082).\n\n* Crash - An attacker sending crafted requests that could cause the system to crash. For Example,  [npm `ws` package](https://snyk.io/vuln/npm:ws:20171108)\n\n## Remediation\nUpgrade `websockets` to version 10.0 or higher.\n## References\n- [GitHub Commit](https://github.com/aaugustin/websockets/commit/0a935b8ec16f4430ffe638cdbfbe45f6f9d7f684)\n",
+      "epssDetails": null,
+      "identifiers": {
+        "CVE": [],
+        "CWE": [
+          "CWE-400"
+        ]
+      },
+      "packageName": "websockets",
+      "proprietary": false,
+      "creationTime": "2021-09-06T11:25:49.756450Z",
+      "functions_new": [],
+      "alternativeIds": [],
+      "disclosureTime": "2021-09-06T11:03:29Z",
+      "packageManager": "pip",
+      "publicationTime": "2021-09-14T14:08:18.807156Z",
+      "modificationTime": "2021-09-14T14:08:18.809343Z",
+      "socialTrendAlert": false,
+      "severityWithCritical": "medium",
+      "from": [
+        "backend@0.1.0",
+        "uvicorn@0.11.3",
+        "websockets@8.1"
+      ],
+      "upgradePath": [
+        false,
+        "uvicorn@0.18.3"
+      ],
+      "isUpgradable": true,
+      "isPatchable": false,
+      "name": "websockets",
+      "version": "8.1"
+    }
+  ],
+  "ok": false,
+  "dependencyCount": 35,
+  "org": "backend-org-dd",
+  "policy": "# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.\nversion: v1.25.1\nignore: {}\npatch: {}\n",
+  "isPrivate": true,
+  "licensesPolicy": {
+    "severities": {},
+    "orgLicenseRules": {
+      "AGPL-1.0": {
+        "licenseType": "AGPL-1.0",
+        "severity": "high",
+        "instructions": "do not use!"
+      },
+      "AGPL-3.0": {
+        "licenseType": "AGPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "Artistic-1.0": {
+        "licenseType": "Artistic-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "Artistic-2.0": {
+        "licenseType": "Artistic-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CDDL-1.0": {
+        "licenseType": "CDDL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CPOL-1.02": {
+        "licenseType": "CPOL-1.02",
+        "severity": "high",
+        "instructions": ""
+      },
+      "EPL-1.0": {
+        "licenseType": "EPL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "GPL-2.0": {
+        "licenseType": "GPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "GPL-3.0": {
+        "licenseType": "GPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "LGPL-2.0": {
+        "licenseType": "LGPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-2.1": {
+        "licenseType": "LGPL-2.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-3.0": {
+        "licenseType": "LGPL-3.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-1.1": {
+        "licenseType": "MPL-1.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-2.0": {
+        "licenseType": "MPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MS-RL": {
+        "licenseType": "MS-RL",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "SimPL-2.0": {
+        "licenseType": "SimPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      }
+    }
+  },
+  "packageManager": "poetry",
+  "projectId": "56d4daea-9116-4566-bc42-58da16e08d99",
+  "ignoreSettings": {
+    "adminOnly": false,
+    "reasonRequired": false,
+    "disregardFilesystemIgnores": false
+  },
+  "summary": "11 vulnerable dependency paths",
+  "remediation": {
+    "unresolved": [
+      {
+        "id": "SNYK-PYTHON-PYDANTIC-1292338",
+        "title": "Denial of Service (DoS)",
+        "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+        "credit": [
+          "Unknown"
+        ],
+        "semver": {
+          "vulnerable": [
+            "[,1.6.2)",
+            "[1.7,1.7.4)",
+            "[1.8,1.8.2)"
+          ]
+        },
+        "exploit": "Not Defined",
+        "fixedIn": [
+          "1.6.2",
+          "1.7.4",
+          "1.8.2"
+        ],
+        "patches": [],
+        "insights": {
+          "triageAdvice": null
+        },
+        "language": "python",
+        "severity": "low",
+        "cvssScore": 3.3,
+        "functions": [],
+        "malicious": false,
+        "isDisputed": false,
+        "moduleName": "pydantic",
+        "references": [
+          {
+            "url": "https://github.com/samuelcolvin/pydantic/security/advisories/GHSA-5jqp-qgf6-3pvh",
+            "title": "GitHub Advisory"
+          },
+          {
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-29510",
+            "title": "NVD"
+          }
+        ],
+        "cvssDetails": [
+          {
+            "assigner": "NVD",
+            "severity": "high",
+            "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "cvssV3BaseScore": 7.5,
+            "modificationTime": "2022-01-03T16:38:48.365746Z"
+          }
+        ],
+        "description": "## Overview\n[pydantic](https://pypi.org/project/pydantic) is a Data validation and settings management using python 3.6 type hinting\n\nAffected versions of this package are vulnerable to Denial of Service (DoS). Use of \"infinity\" as an input to datetime and date fields causes infinite loop in pydantic. Passing either 'infinity', 'inf' or float('inf') (or their negatives) to datetime or date fields causes validation to run forever with 100% CPU usage (on one CPU).\n\n## Details\n\nDenial of Service (DoS) describes a family of attacks, all aimed at making a system inaccessible to its intended and legitimate users.\n\nUnlike other vulnerabilities, DoS attacks usually do not aim at breaching security. Rather, they are focused on making websites and services unavailable to genuine users resulting in downtime.\n\nOne popular Denial of Service vulnerability is DDoS (a Distributed Denial of Service), an attack that attempts to clog network pipes to the system by generating a large volume of traffic from many machines.\n\nWhen it comes to open source libraries, DoS vulnerabilities allow attackers to trigger such a crash or crippling of the service by using a flaw either in the application code or from the use of open source libraries.\n\nTwo common types of DoS vulnerabilities:\n\n* High CPU/Memory Consumption- An attacker sending crafted requests that could cause the system to take a disproportionate amount of time to process. For example, [commons-fileupload:commons-fileupload](SNYK-JAVA-COMMONSFILEUPLOAD-30082).\n\n* Crash - An attacker sending crafted requests that could cause the system to crash. For Example,  [npm `ws` package](https://snyk.io/vuln/npm:ws:20171108)\n\n## Remediation\nUpgrade `pydantic` to version 1.6.2, 1.7.4, 1.8.2 or higher.\n## References\n- [GitHub Advisory](https://github.com/samuelcolvin/pydantic/security/advisories/GHSA-5jqp-qgf6-3pvh)\n- [NVD](https://nvd.nist.gov/vuln/detail/CVE-2021-29510)\n",
+        "epssDetails": {
+          "percentile": "0.46624",
+          "probability": "0.00129",
+          "modelVersion": "v2023.03.01"
+        },
+        "identifiers": {
+          "CVE": [
+            "CVE-2021-29510"
+          ],
+          "CWE": [
+            "CWE-835"
+          ],
+          "GHSA": [
+            "GHSA-5jqp-qgf6-3pvh"
+          ]
+        },
+        "packageName": "pydantic",
+        "proprietary": false,
+        "creationTime": "2021-05-14T13:49:57.169520Z",
+        "functions_new": [],
+        "alternativeIds": [],
+        "disclosureTime": "2021-05-13T20:23:17Z",
+        "packageManager": "pip",
+        "publicationTime": "2021-05-14T15:39:36.568909Z",
+        "modificationTime": "2022-01-03T16:38:48.365746Z",
+        "socialTrendAlert": false,
+        "packagePopularityRank": 99,
+        "from": [
+          "backend@0.1.0",
+          "fastapi@0.52.0",
+          "pydantic@1.4"
+        ],
+        "upgradePath": [
+          false,
+          "fastapi@0.52.0"
+        ],
+        "isUpgradable": true,
+        "isPatchable": false,
+        "isPinnable": true,
+        "isRuntime": false,
+        "name": "pydantic",
+        "version": "1.4",
+        "severityWithCritical": "low"
+      },
+      {
+        "id": "SNYK-PYTHON-STARLETTE-3319937",
+        "title": "Denial of Service (DoS)",
+        "CVSSv3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+        "credit": [
+          "@das7pad"
+        ],
+        "semver": {
+          "vulnerable": [
+            "[,0.25.0)"
+          ]
+        },
+        "exploit": "Not Defined",
+        "fixedIn": [
+          "0.25.0"
+        ],
+        "patches": [],
+        "insights": {
+          "triageAdvice": null
+        },
+        "language": "python",
+        "severity": "medium",
+        "cvssScore": 5.9,
+        "functions": [],
+        "malicious": false,
+        "isDisputed": false,
+        "moduleName": "starlette",
+        "references": [
+          {
+            "url": "https://github.com/encode/starlette/commit/8c74c2c8dba7030154f8af18e016136bea1938fa",
+            "title": "GitHub Commit"
+          },
+          {
+            "url": "https://github.com/encode/starlette/pull/2036",
+            "title": "GitHub PR"
+          }
+        ],
+        "cvssDetails": [
+          {
+            "assigner": "NVD",
+            "severity": "high",
+            "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+            "cvssV3BaseScore": 7.5,
+            "modificationTime": "2023-04-28T13:10:07.017020Z"
+          }
+        ],
+        "description": "## Overview\n[starlette](https://www.pypi.org/project/starlette) is a The little ASGI library that shines.\n\nAffected versions of this package are vulnerable to Denial of Service (DoS) via the `MultipartParser` class, which accepts an unlimited number of fields and files when parsing `multipart/form-data`.\r\nExploiting this vulnerability is possible by sending too many small form fields with no content or too many empty files, which results in high CPU usage and high memory usage.\r\n\r\n**Note:** \r\n\r\nAn affected application has to have all the following:\r\n\r\n1) `python-multipart` installed.\r\n\r\n2) calls `request.form()`.\r\n\r\n\r\n## Workarounds\r\n\r\nApplications that don't install `python-multipart` or that don't use form fields are safe.\r\n\r\nIn older versions, it's also possible to instead of calling `request.form()` call `request.stream()` and parse the form data in internal code.\n\n## Details\n\nDenial of Service (DoS) describes a family of attacks, all aimed at making a system inaccessible to its intended and legitimate users.\n\nUnlike other vulnerabilities, DoS attacks usually do not aim at breaching security. Rather, they are focused on making websites and services unavailable to genuine users resulting in downtime.\n\nOne popular Denial of Service vulnerability is DDoS (a Distributed Denial of Service), an attack that attempts to clog network pipes to the system by generating a large volume of traffic from many machines.\n\nWhen it comes to open source libraries, DoS vulnerabilities allow attackers to trigger such a crash or crippling of the service by using a flaw either in the application code or from the use of open source libraries.\n\nTwo common types of DoS vulnerabilities:\n\n* High CPU/Memory Consumption- An attacker sending crafted requests that could cause the system to take a disproportionate amount of time to process. For example, [commons-fileupload:commons-fileupload](SNYK-JAVA-COMMONSFILEUPLOAD-30082).\n\n* Crash - An attacker sending crafted requests that could cause the system to crash. For Example,  [npm `ws` package](https://snyk.io/vuln/npm:ws:20171108)\n\n## Remediation\nUpgrade `starlette` to version 0.25.0 or higher.\n## References\n- [GitHub Commit](https://github.com/encode/starlette/commit/8c74c2c8dba7030154f8af18e016136bea1938fa)\n- [GitHub PR](https://github.com/encode/starlette/pull/2036)\n",
+        "epssDetails": {
+          "percentile": "0.42075",
+          "probability": "0.00106",
+          "modelVersion": "v2023.03.01"
+        },
+        "identifiers": {
+          "CVE": [
+            "CVE-2023-30798"
+          ],
+          "CWE": [
+            "CWE-400"
+          ],
+          "GHSA": [
+            "GHSA-74m5-2c7w-9w3x"
+          ]
+        },
+        "packageName": "starlette",
+        "proprietary": false,
+        "creationTime": "2023-02-15T09:14:25.359077Z",
+        "functions_new": [],
+        "alternativeIds": [],
+        "disclosureTime": "2023-02-14T21:31:28Z",
+        "packageManager": "pip",
+        "publicationTime": "2023-02-15T09:25:51.518082Z",
+        "modificationTime": "2023-04-28T13:10:07.017020Z",
+        "socialTrendAlert": false,
+        "packagePopularityRank": 99,
+        "from": [
+          "backend@0.1.0",
+          "fastapi@0.52.0",
+          "starlette@0.13.2"
+        ],
+        "upgradePath": [
+          false,
+          "fastapi@0.52.0"
+        ],
+        "isUpgradable": true,
+        "isPatchable": false,
+        "isPinnable": true,
+        "isRuntime": false,
+        "name": "starlette",
+        "version": "0.13.2",
+        "severityWithCritical": "medium"
+      },
+      {
+        "id": "SNYK-PYTHON-STARLETTE-573266",
+        "title": "Directory Traversal",
+        "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
+        "credit": [
+          "erinpentecost"
+        ],
+        "semver": {
+          "vulnerable": [
+            "[0,0.13.5)"
+          ]
+        },
+        "exploit": "Not Defined",
+        "fixedIn": [
+          "0.13.5"
+        ],
+        "patches": [],
+        "insights": {
+          "triageAdvice": null
+        },
+        "language": "python",
+        "severity": "high",
+        "cvssScore": 8.6,
+        "functions": [],
+        "malicious": false,
+        "isDisputed": false,
+        "moduleName": "starlette",
+        "references": [
+          {
+            "url": "https://github.com/encode/starlette/issues/981",
+            "title": "GitHub Issue"
+          },
+          {
+            "url": "https://github.com/encode/starlette/pull/985/files",
+            "title": "GitHub PR"
+          }
+        ],
+        "cvssDetails": [],
+        "description": "## Overview\n[starlette](https://www.pypi.org/project/starlette) is a The little ASGI library that shines.\n\nAffected versions of this package are vulnerable to Directory Traversal. Any file on the host machine can be read by passing an absolute path, formatted in a URL such as `http://localhost:5000/staticmount/c%3a%5cwindows%5cwin.ini`.\n\n## Details\n\nA Directory Traversal attack (also known as path traversal) aims to access files and directories that are stored outside the intended folder. By manipulating files with \"dot-dot-slash (../)\" sequences and its variations, or by using absolute file paths, it may be possible to access arbitrary files and directories stored on file system, including application source code, configuration, and other critical system files.\n\nDirectory Traversal vulnerabilities can be generally divided into two types:\n\n- **Information Disclosure**: Allows the attacker to gain information about the folder structure or read the contents of sensitive files on the system.\n\n`st` is a module for serving static files on web pages, and contains a [vulnerability of this type](https://snyk.io/vuln/npm:st:20140206). In our example, we will serve files from the `public` route.\n\nIf an attacker requests the following URL from our server, it will in turn leak the sensitive private key of the root user.\n\n```\ncurl http://localhost:8080/public/%2e%2e/%2e%2e/%2e%2e/%2e%2e/%2e%2e/root/.ssh/id_rsa\n```\n**Note** `%2e` is the URL encoded version of `.` (dot).\n\n- **Writing arbitrary files**: Allows the attacker to create or replace existing files. This type of vulnerability is also known as `Zip-Slip`. \n\nOne way to achieve this is by using a malicious `zip` archive that holds path traversal filenames. When each filename in the zip archive gets concatenated to the target extraction folder, without validation, the final path ends up outside of the target folder. If an executable or a configuration file is overwritten with a file containing malicious code, the problem can turn into an arbitrary code execution issue quite easily.\n\nThe following is an example of a `zip` archive with one benign file and one malicious file. Extracting the malicious file will result in traversing out of the target folder, ending up in `/root/.ssh/` overwriting the `authorized_keys` file:\n\n```\n2018-04-15 22:04:29 .....           19           19  good.txt\n2018-04-15 22:04:42 .....           20           20  ../../../../../../root/.ssh/authorized_keys\n```\n\n## Remediation\nUpgrade `starlette` to version 0.13.5 or higher.\n## References\n- [GitHub Issue](https://github.com/encode/starlette/issues/981)\n- [GitHub PR](https://github.com/encode/starlette/pull/985/files)\n",
+        "epssDetails": null,
+        "identifiers": {
+          "CVE": [],
+          "CWE": [
+            "CWE-22"
+          ]
+        },
+        "packageName": "starlette",
+        "proprietary": false,
+        "creationTime": "2020-06-25T13:53:16.782466Z",
+        "functions_new": [],
+        "alternativeIds": [],
+        "disclosureTime": "2020-06-25T13:43:31Z",
+        "packageManager": "pip",
+        "publicationTime": "2020-07-19T16:14:28.944469Z",
+        "modificationTime": "2020-07-19T16:14:28.946431Z",
+        "socialTrendAlert": false,
+        "packagePopularityRank": 99,
+        "from": [
+          "backend@0.1.0",
+          "fastapi@0.52.0",
+          "starlette@0.13.2"
+        ],
+        "upgradePath": [
+          false,
+          "fastapi@0.52.0"
+        ],
+        "isUpgradable": true,
+        "isPatchable": false,
+        "isPinnable": true,
+        "isRuntime": false,
+        "name": "starlette",
+        "version": "0.13.2",
+        "severityWithCritical": "high"
+      },
+      {
+        "id": "SNYK-PYTHON-TWISTED-3084923",
+        "title": "HTTP Header Injection",
+        "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N/E:P",
+        "credit": [
+          "Unknown"
+        ],
+        "semver": {
+          "vulnerable": [
+            "[,22.10.0rc1)"
+          ]
+        },
+        "exploit": "Proof of Concept",
+        "fixedIn": [
+          "22.10.0rc1"
+        ],
+        "patches": [],
+        "insights": {
+          "triageAdvice": null
+        },
+        "language": "python",
+        "severity": "medium",
+        "cvssScore": 5.4,
+        "functions": [],
+        "malicious": false,
+        "isDisputed": false,
+        "moduleName": "twisted",
+        "references": [
+          {
+            "url": "https://github.com/twisted/twisted/commit/f2f5e81c03f14e253e85fe457e646130780db40b",
+            "title": "GitHub Commit"
+          },
+          {
+            "url": "https://github.com/twisted/twisted/commit/f49041bb67792506d85aeda9cf6157e92f8048f4",
+            "title": "GitHub Commit"
+          },
+          {
+            "url": "https://github.com/twisted/twisted/releases/tag/twisted-22.10.0rc1",
+            "title": "GitHub Release"
+          }
+        ],
+        "cvssDetails": [
+          {
+            "assigner": "NVD",
+            "severity": "medium",
+            "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+            "cvssV3BaseScore": 5.4,
+            "modificationTime": "2022-11-23T01:10:35.406408Z"
+          },
+          {
+            "assigner": "Red Hat",
+            "severity": "medium",
+            "cvssV3Vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+            "cvssV3BaseScore": 5.4,
+            "modificationTime": "2022-11-17T16:05:09.580392Z"
+          },
+          {
+            "assigner": "SUSE",
+            "severity": "low",
+            "cvssV3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+            "cvssV3BaseScore": 3.7,
+            "modificationTime": "2022-11-18T11:01:34.480192Z"
+          }
+        ],
+        "description": "## Overview\n[Twisted](https://pypi.org/project/Twisted/) is an event-based network programming and multi-protocol integration framework.\n\nAffected versions of this package are vulnerable to HTTP Header Injection via the `NameVirtualHost` function. When the host header does not match a configured host, `twisted.web.vhost.NameVirtualHost` will return a `NoResource` resource which renders the Host header unescaped into the 404 response allowing HTML and script injection.\r\n\r\n## PoC:\r\n\r\n```python\r\nfrom twisted.web.server import Site\r\nfrom twisted.web.vhost import NameVirtualHost\r\nfrom twisted.internet import reactor\r\n\r\nresource = NameVirtualHost()\r\nsite = Site(resource)\r\nreactor.listenTCP(8080, site)\r\nreactor.run()\r\n```\r\n**Output:**\r\n\r\n```\r\n❯ curl -H\"Host:<h1>HELLO THERE</h1>\" http://localhost:8080/\r\n\r\n<html>\r\n  <head><title>404 - No Such Resource</title></head>\r\n  <body>\r\n    <h1>No Such Resource</h1>\r\n    <p>host b'<h1>hello there</h1>' not in vhost map</p>\r\n  </body>\r\n</html>\r\n```\n## Remediation\nUpgrade `Twisted` to version 22.10.0rc1 or higher.\n## References\n- [GitHub Commit](https://github.com/twisted/twisted/commit/f2f5e81c03f14e253e85fe457e646130780db40b)\n- [GitHub Commit](https://github.com/twisted/twisted/commit/f49041bb67792506d85aeda9cf6157e92f8048f4)\n- [GitHub Release](https://github.com/twisted/twisted/releases/tag/twisted-22.10.0rc1)\n",
+        "epssDetails": {
+          "percentile": "0.28109",
+          "probability": "0.00068",
+          "modelVersion": "v2023.03.01"
+        },
+        "identifiers": {
+          "CVE": [
+            "CVE-2022-39348"
+          ],
+          "CWE": [
+            "CWE-644"
+          ],
+          "GHSA": [
+            "GHSA-vg46-2rrj-3647"
+          ]
+        },
+        "packageName": "twisted",
+        "proprietary": false,
+        "creationTime": "2022-10-27T10:36:49.332333Z",
+        "functions_new": [],
+        "alternativeIds": [],
+        "disclosureTime": "2022-10-26T22:08:39Z",
+        "packageManager": "pip",
+        "publicationTime": "2022-10-27T11:22:59.932379Z",
+        "modificationTime": "2022-11-23T01:10:35.406408Z",
+        "socialTrendAlert": false,
+        "packagePopularityRank": 93,
+        "from": [
+          "backend@0.1.0",
+          "channels@3.0.2",
+          "daphne@3.0.2",
+          "twisted@22.4.0"
+        ],
+        "upgradePath": [],
+        "isUpgradable": false,
+        "isPatchable": false,
+        "isPinnable": true,
+        "isRuntime": false,
+        "name": "twisted",
+        "version": "22.4.0",
+        "severityWithCritical": "medium"
+      }
+    ],
+    "upgrade": {
+      "channels@3.0.2": {
+        "upgradeTo": "channels@3.0.3",
+        "upgrades": [
+          "channels@3.0.2",
+          "channels@3.0.2"
+        ],
+        "vulns": [
+          "SNYK-PYTHON-CHANNELS-1055010",
+          "SNYK-PYTHON-CHANNELS-1078280"
+        ]
+      },
+      "fastapi@0.52.0": {
+        "upgradeTo": "fastapi@0.65.2",
+        "upgrades": [
+          "fastapi@0.52.0"
+        ],
+        "vulns": [
+          "SNYK-PYTHON-FASTAPI-1303092"
+        ]
+      },
+      "uvicorn@0.11.3": {
+        "upgradeTo": "uvicorn@0.18.3",
+        "upgrades": [
+          "websockets@8.1",
+          "websockets@8.1",
+          "uvicorn@0.11.3",
+          "uvicorn@0.11.3"
+        ],
+        "vulns": [
+          "SNYK-PYTHON-WEBSOCKETS-1297182",
+          "SNYK-PYTHON-WEBSOCKETS-1582792",
+          "SNYK-PYTHON-UVICORN-570471",
+          "SNYK-PYTHON-UVICORN-575560"
+        ]
+      }
+    },
+    "patch": {},
+    "ignore": {},
+    "pin": {
+      "channels@3.0.2": {
+        "upgradeTo": "channels@3.0.3",
+        "vulns": [
+          "SNYK-PYTHON-CHANNELS-1055010",
+          "SNYK-PYTHON-CHANNELS-1078280"
+        ],
+        "isTransitive": false
+      },
+      "fastapi@0.52.0": {
+        "upgradeTo": "fastapi@0.65.2",
+        "vulns": [
+          "SNYK-PYTHON-FASTAPI-1303092"
+        ],
+        "isTransitive": false
+      },
+      "pydantic@1.4": {
+        "upgradeTo": "pydantic@1.6.2",
+        "vulns": [
+          "SNYK-PYTHON-PYDANTIC-1292338"
+        ],
+        "isTransitive": true
+      },
+      "starlette@0.13.2": {
+        "upgradeTo": "starlette@0.25.0",
+        "vulns": [
+          "SNYK-PYTHON-STARLETTE-3319937",
+          "SNYK-PYTHON-STARLETTE-573266"
+        ],
+        "isTransitive": true
+      },
+      "twisted@22.4.0": {
+        "upgradeTo": "twisted@22.10.0rc1",
+        "vulns": [
+          "SNYK-PYTHON-TWISTED-3084923"
+        ],
+        "isTransitive": true
+      },
+      "uvicorn@0.11.3": {
+        "upgradeTo": "uvicorn@0.11.7",
+        "vulns": [
+          "SNYK-PYTHON-UVICORN-570471",
+          "SNYK-PYTHON-UVICORN-575560"
+        ],
+        "isTransitive": false
+      },
+      "websockets@8.1": {
+        "upgradeTo": "websockets@10.0",
+        "vulns": [
+          "SNYK-PYTHON-WEBSOCKETS-1297182",
+          "SNYK-PYTHON-WEBSOCKETS-1582792"
+        ],
+        "isTransitive": true
+      }
+    }
+  },
+  "filesystemPolicy": false,
+  "filtered": {
+    "ignore": [],
+    "patch": []
+  },
+  "uniqueCount": 11,
+  "targetFile": "pyproject.toml",
+  "projectName": "backend",
+  "displayTargetFile": "pyproject.toml",
+  "hasUnknownVersions": false,
+  "path": "/Users/dylanhavelock/demo-apps/python/poetry-playground"
+}
