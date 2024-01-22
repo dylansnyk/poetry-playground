@@ -9,12 +9,10 @@ description = "Minimal Poetry example with Docker Multi-Stage builds"
 authors = ["Michael Oliver <mo175@live.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.12"
 
 fastapi = "0.52.0"
 gunicorn = "^20.0.4"
-uvicorn = "^0.11.3"
-channels = "3.0.2"
 
 
 [tool.poetry.dev-dependencies]
