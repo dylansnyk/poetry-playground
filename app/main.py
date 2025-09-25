@@ -5,6 +5,7 @@ https://fastapi.tiangolo.com/
 
 from fastapi import FastAPI
 from pydantic import BaseModel
+from .services.chat import get_completion
 
 app = FastAPI()
 
@@ -28,3 +29,8 @@ def read_item(item_id: int, q: str = None):
 @app.put("/items/{item_id}")
 def update_item(item_id: int, item: Item):
     return {"item_name": item.name, "item_id": item_id}
+
+@app.get("/completion")
+def get_completion(prompt: str):
+    msg = get_completion(prompt)
+    return {"msg": msg}

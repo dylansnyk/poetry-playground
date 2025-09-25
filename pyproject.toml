@@ -13,14 +13,17 @@ python = "^3.12"
 
 fastapi = "0.52.0"
 gunicorn = "^20.0.4"
+mypy = "^1.18.2"
+openai = "^1.109.1"
 
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev.dependencies]
 pytest = "5.3.5"
 coverage = { version = "5.0.3", extras = ["toml"]}
 black = "^19.10b0"
 isort = { version = "^4.3.21", extras = ["pyproject"]}
 requests = "^2.23.0"
+typed-ast = { version = "*", python = "<3.13" }
 
 
 [tool.black]
